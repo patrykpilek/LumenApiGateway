@@ -15,7 +15,7 @@ php -S localhost:8002 -t public
 ## Microservice for authors with Lumen
 
 - [x] preparing Lumen for the API Gateway
-- [ ] creating the controllers for the authors and books Lumen microservices
+- [x] creating the controllers for the authors and books Lumen microservices
 - [ ] unifying Lumen responses for the API Gateway
 - [ ] Registering routes for microservices in Lumen from the Gateway
 - [ ] Preparing the Gateway in Lumen to consume services
