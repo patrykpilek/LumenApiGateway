@@ -25,7 +25,7 @@ php -S localhost:8002 -t public
 
 - [x] obtaining the list of authors from the authors Lumen
 - [x] creating an author instance with the authors service
-- [ ] showing an author instance using the authors lumen microservice
+- [x] showing an author instance using the authors lumen microservice
 - [ ] editing author instances using the authors service
 - [ ] deleting author instances using the authors Lumen service
 - [ ] implementing operations for books based on the authors ones
