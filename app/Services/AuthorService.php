@@ -45,4 +45,13 @@ class AuthorService
     {
         return $this->performRequest('GET', "/authors/{$author}");
     }
+
+    /**
+     * Update an instance of author using the author service
+     * @return string
+     */
+    public function editAuthor($data, $author)
+    {
+        return $this->performRequest('PUT', "/authors/{$author}", $data);
+    }
 }
