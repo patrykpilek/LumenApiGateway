@@ -30,4 +30,4 @@ php -S localhost:8002 -t public
 - [x] deleting author instances using the authors Lumen service
 - [x] implementing operations for books based on the authors ones
 - [x] checking the existence of the author before creating a book
-- [ ] controlling errors obtained from services
+- [x] controlling errors obtained from services
