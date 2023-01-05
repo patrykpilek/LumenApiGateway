@@ -24,7 +24,7 @@ php -S localhost:8002 -t public
 ## Implementing the functions of the Gateway with Lumen
 
 - [x] obtaining the list of authors from the authors Lumen
-- [ ] creating an author instance with the authors service
+- [x] creating an author instance with the authors service
 - [ ] showing an author instance using the authors lumen microservice
 - [ ] editing author instances using the authors service
 - [ ] deleting author instances using the authors Lumen service
