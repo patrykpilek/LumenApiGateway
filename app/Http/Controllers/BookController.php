@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\AuthorService;
 use App\Services\BookService;
 use App\Traits\ApiResponser;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class BookController extends Controller
 {
@@ -12,17 +14,24 @@ class BookController extends Controller
 
     /**
      * The service to consume the books microservice
+     * @var BookService
      */
     public $bookService;
+
+    /**
+     * The service to consume the authors microservice
+     */
+    public $authorService;
 
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct(BookService $bookService)
+    public function __construct(BookService $bookService, AuthorService $authorService)
     {
         $this->bookService = $bookService;
+        $this->authorService = $authorService;
     }
 
     /**
@@ -30,7 +39,7 @@ class BookController extends Controller
      */
     public function index()
     {
-        //
+        return $this->successResponse($this->bookService->obtainBooks());
     }
 
     /**
@@ -38,7 +47,10 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // checking the existence of the author before creating a book
+        $this->authorService->obtainAuthor($request->author_id);
+
+        return $this->successResponse($this->bookService->createBook($request->all(), Response::HTTP_CREATED));
     }
 
     /**
@@ -46,7 +58,7 @@ class BookController extends Controller
      */
     public function show($book)
     {
-        //
+        return $this->successResponse($this->bookService->obtainBook($book));
     }
 
     /**
@@ -54,7 +66,7 @@ class BookController extends Controller
      */
     public function update(Request $request, $book)
     {
-        //
+        return $this->successResponse($this->bookService->editBook($request->all(), $book));
     }
 
     /**
@@ -62,6 +74,6 @@ class BookController extends Controller
      */
     public function destroy($book)
     {
-        //
+        return $this->successResponse($this->bookService->deleteBook($book));
     }
 }
