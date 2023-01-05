@@ -20,3 +20,14 @@ php -S localhost:8002 -t public
 - [x] registering routes for microservices in Lumen from the Gateway
 - [x] preparing the Gateway in Lumen to consume services
 - [x] preparing the Lumen components to consume the internal services
+
+## Implementing the functions of the Gateway with Lumen
+
+- [x] obtaining the list of authors from the authors Lumen
+- [ ] creating an author instance with the authors service
+- [ ] showing an author instance using the authors lumen microservice
+- [ ] editing author instances using the authors service
+- [ ] deleting author instances using the authors Lumen service
+- [ ] implementing operations for books based on the authors ones
+- [ ] checking the existence of the author before creating a book
+- [ ] controlling errors obtained from services
