@@ -35,7 +35,7 @@ php -S localhost:8002 -t public
 ## Implementing the security layer of the microservices architecture with Lumen
 
 - [x] installing and enabling Lumen Passport components
-- [ ] preparing and configuring Lumen to use Passport
+- [x] preparing and configuring Lumen to use Passport
 - [ ] protecting the Gateway routes with Lumen Passport
 - [ ] Obtaining and using access tokens fo the Lumen API Gateway
 - [ ] preparing the API Gateway to Authenticate its requests
