@@ -31,3 +31,11 @@ php -S localhost:8002 -t public
 - [x] implementing operations for books based on the authors ones
 - [x] checking the existence of the author before creating a book
 - [x] controlling errors obtained from services
+
+## Implementing the security layer of the microservices architecture with Lumen
+
+- [x] installing and enabling Lumen Passport components
+- [x] preparing and configuring Lumen to use Passport
+- [x] protecting the Gateway routes with Lumen Passport
+- [x] obtaining and using access tokens fo the Lumen API Gateway
+- [x] preparing the API Gateway to Authenticate its requests
