@@ -39,3 +39,11 @@ php -S localhost:8002 -t public
 - [x] protecting the Gateway routes with Lumen Passport
 - [x] obtaining and using access tokens fo the Lumen API Gateway
 - [x] preparing the API Gateway to Authenticate its requests
+
+## Authenticating user access with access tokens
+
+- [x] creating the migration for the users table in Lumen
+- [ ] creating the controller and the routes to manage users in Lumen
+- [ ] fixing some details related to user operations
+- [ ] creating users and creating access tokens associated with users
+- [ ] identifying an authenticated user through access token
