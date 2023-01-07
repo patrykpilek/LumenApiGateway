@@ -38,6 +38,6 @@ php -S localhost:8002 -t public
 - [x] preparing and configuring Lumen to use Passport
 - [x] protecting the Gateway routes with Lumen Passport
 - [x] obtaining and using access tokens fo the Lumen API Gateway
-- [ ] preparing the API Gateway to Authenticate its requests
+- [x] preparing the API Gateway to Authenticate its requests
 - [ ] authenticating direct access to the Lumen authors microservice
 - [ ] authenticating direct access to the microservice of books
