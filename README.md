@@ -43,7 +43,7 @@ php -S localhost:8002 -t public
 ## Authenticating user access with access tokens
 
 - [x] creating the migration for the users table in Lumen
-- [ ] creating the controller and the routes to manage users in Lumen
+- [x] creating the controller and the routes to manage users in Lumen
 - [ ] fixing some details related to user operations
 - [ ] creating users and creating access tokens associated with users
 - [ ] identifying an authenticated user through access token
