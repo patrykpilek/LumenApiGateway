@@ -46,4 +46,4 @@ php -S localhost:8002 -t public
 - [x] creating the controller and the routes to manage users in Lumen
 - [x] fixing some details related to user operations
 - [x] creating users and creating access tokens associated with users
-- [ ] identifying an authenticated user through access token
+- [x] identifying an authenticated user through access token
