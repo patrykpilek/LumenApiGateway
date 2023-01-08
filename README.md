@@ -45,5 +45,5 @@ php -S localhost:8002 -t public
 - [x] creating the migration for the users table in Lumen
 - [x] creating the controller and the routes to manage users in Lumen
 - [x] fixing some details related to user operations
-- [ ] creating users and creating access tokens associated with users
+- [x] creating users and creating access tokens associated with users
 - [ ] identifying an authenticated user through access token
